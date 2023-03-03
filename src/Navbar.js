@@ -1,18 +1,14 @@
-import React, { useState, useEffect } from "react";
-import logo from "./images/logo.svg";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "./context";
 import sublinks from "./data";
+import logo from "./images/logo.svg";
 const Navbar = () => {
   const { openSidebar } = useGlobalContext();
   const [isOpen, setIsOpen] = useState(false);
-  const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: "", links: [] });
 
-  useEffect(() => {
-    const currentLocation = window.location.pathname;
-    setLocation(currentLocation);
-  }, []);
+ 
 
   const handleClick = (page) => {
     setPage(sublinks.find((link) => link.page === page));
@@ -26,6 +22,9 @@ const Navbar = () => {
 
   return (
     <nav className="nav" onMouseLeave={handleMouseLeave}>
+      <button className="back_to_portfolio">
+        <a href="https://63d14f15b8305d4d556107bf--startling-bienenstitch-220eca.netlify.app/?fbclid=IwAR15QoCcO4CvjPsP6s9XFXjzsA-U0MZzl_LF9BaMIUGoS9jBG0GNkjygFkY">WRÓĆ DO PORTFOLIO</a>
+      </button>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="stripe" className="nav-logo" />
@@ -43,6 +42,7 @@ const Navbar = () => {
                 >
                   {link.page}
                 </button>
+                
               </li>
             );
           })}
@@ -56,7 +56,7 @@ const Navbar = () => {
               return (
                 <li key={index} className="nav-modal-li">
                   <a href={link.url} className="nav-modal-a">
-                    {link.icon}
+                    {link.icon}{" "}
                     {link.label}
                   </a>
                 </li>

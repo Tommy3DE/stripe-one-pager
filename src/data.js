@@ -4,25 +4,25 @@ const sublinks = [
   {
     page: 'products',
     links: [
-      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
+      { label: 'Payment', icon: <FaCreditCard />, url: '/products' },
+      { label: 'Terminal', icon: <FaCreditCard />, url: '/products' },
+      { label: 'Connect', icon: <FaCreditCard />, url: '/products' },
     ],
   },
   {
     page: 'developers',
     links: [
-      { label: 'plugins', icon: <FaBook />, url: '/products' },
-      { label: 'libraries', icon: <FaBook />, url: '/products' },
-      { label: 'help', icon: <FaBook />, url: '/products' },
-      { label: 'billing', icon: <FaBook />, url: '/products' },
+      { label: 'Plugins', icon: <FaBook />, url: '/developers' },
+      { label: 'Libraries', icon: <FaBook />, url: '/developers' },
+      { label: 'Help', icon: <FaBook />, url: '/developers' },
+      { label: 'Billing', icon: <FaBook />, url: '/developers' },
     ],
   },
   {
     page: 'company',
     links: [
-      { label: 'about', icon: <FaBriefcase />, url: '/products' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+      { label: 'About', icon: <FaBriefcase />, url: '/company' },
+      { label: 'Customers', icon: <FaBriefcase />, url: '/company' },
     ],
   },
 ];
