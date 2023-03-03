@@ -489,11 +489,11 @@ p {
   padding: 2px;
   border-radius: var(--radius);
   color: var(--clr-white);
-  
+  border: 1px solid var(--clr-white);
 }
 .back_to_portfolio a{
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 11px;
 }
 @media screen and (max-width: 800px) {
