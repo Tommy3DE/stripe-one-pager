@@ -119,9 +119,7 @@ p {
     line-height: 1;
   }
 }
-/*  global classes */
 
-/* section */
 .section {
   width: 90vw;
   margin: 0 auto;
@@ -134,23 +132,23 @@ p {
   }
 }
 
-/*
-=============== 
-Stripe Styles
-===============
-*/
 .nav {
   height: 5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: transparent;
   position: relative;
   z-index: 1;
+  width: 100vw;
 }
 .nav-center {
   width: 90vw;
   max-width: var(--max-width);
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  margin: auto;
 }
 .nav-header {
   display: flex;
@@ -216,7 +214,6 @@ Stripe Styles
   display: none;
 }
 
-/* nav media query */
 @media screen and (min-width: 800px) {
   .nav-center {
     display: grid;
@@ -430,4 +427,37 @@ Stripe Styles
 .submenu-center svg {
   color: var(--clr-grey-5);
   margin-right: 1rem;
+}
+.stripe__new-submenu{
+  width: 400px;
+  background-color: aqua;
+  z-index: 10;
+
+}
+.nav-modal{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 40%;
+
+}
+.nav-modal-ul{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--clr-white);
+  margin:auto;
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+  width: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  color: var(--clr-grey-5);
+  text-decoration: none;
+}
+
+.nav-modal-a{
+  margin: 0 3rem;
 }
