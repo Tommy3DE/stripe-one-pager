@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="nav" onMouseLeave={handleMouseLeave}>
       <button className="back_to_portfolio">
-        <a href="https://63d14f15b8305d4d556107bf--startling-bienenstitch-220eca.netlify.app/?fbclid=IwAR15QoCcO4CvjPsP6s9XFXjzsA-U0MZzl_LF9BaMIUGoS9jBG0GNkjygFkY">WRÓĆ DO PORTFOLIO</a>
+        <a href="https://main--startling-bienenstitch-220eca.netlify.app">WRÓĆ DO PORTFOLIO</a>
       </button>
       <div className="nav-center">
         <div className="nav-header">
